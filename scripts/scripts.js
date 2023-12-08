@@ -28,14 +28,14 @@ function recalculate(){
     var newcost;
     
     if(modelName==="Model XYZ"){
-        newcost = duration * 100
+        newcost = duration * 100;
     }else if (modelName ==="Model CPRG"){
         newcost = duration * 213;
     }else{
         newcost = 0;
     }
     
-    costLabel.innerHTML = newcost
+    costLabel.innerHTML = newcost;
 }
 
 
@@ -69,7 +69,7 @@ function changeModel(){
         modelText.innerHTML = "Model XYZ";
     }
     
-    recalculate()
+    recalculate();
 }
 // var durationButton = document.getElementById("duration-button");
 // durationButton.addEventListener("click", changeDuration);
@@ -104,6 +104,6 @@ function changeDuration(){
     var newDuration = prompt("Enter a new duration:");
 
     duration = newDuration;
-    durationText.innerHTML = duration
+    durationText.innerHTML = duration;
     recalculate();
 }
